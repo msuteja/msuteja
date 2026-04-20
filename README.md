@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+Currently studying Computer Science.
+
+Good food, good films, and good music keep me alive.
+
 <!--
 **msuteja/msuteja** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
