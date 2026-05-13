@@ -15,7 +15,7 @@ export default function Hero() {
 
       <div className="border-t border-black/10 pt-6 md:col-span-4 md:border-l md:border-t-0 md:pl-8">
         <p className="text-base leading-relaxed text-black/65">
-          I’m Michael, a Computer Science student at SMU working across AI,
+          Hi! I’m Michael, a Computer Science student at SMU working across AI,
           cybersecurity, cloud systems, and developer tooling.
         </p>
 
@@ -24,11 +24,11 @@ export default function Hero() {
             href="/projects"
             className="border border-black px-4 py-3 transition hover:bg-black hover:text-[#f4f1ea]"
           >
-            View Work
+            Projects
           </Link>
 
           <a
-            href="/resume.pdf"
+            href="/Michael_Suteja_Resume_2026.pdf"
             className="border border-black/20 px-4 py-3 text-black/60 transition hover:border-black hover:text-black"
           >
             Resume
