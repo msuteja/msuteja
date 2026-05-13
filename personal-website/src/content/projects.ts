@@ -8,7 +8,7 @@ export const projects = [
     type: "Final Year Project",
     thumbnail: "/images/projects/codellamas.png",
     description:
-      "An AI-powered VSCode extension that generates and evaluates Spring Boot refactoring exercises.",
+      "An AI-powered VSCode extension that generates and evaluates Spring Boot refactoring exercises",
     stack: ["FastAPI", "CrewAI", "Spring Boot", "TypeScript"],
     summary: "codellamas - An AI-powered VSCode extension to help students learn software refactoring through generated exercises.",
     details: "Test",
@@ -30,7 +30,7 @@ export const projects = [
     type: "AI",
     thumbnail: "/images/projects/sign-language-recognition.png",
     description:
-      "A computer vision system for sign language recognition using ResNet50 and MediaPipe.",
+      "A computer vision system for sign language recognition using ResNet50 and MediaPipe",
     stack: ["TensorFlow", "Keras", "MediaPipe"],
     summary: "An AI-powered computer vision system for recognizing American Sign Language using ResNet50 and MediaPipe.",
     details: "Test",
