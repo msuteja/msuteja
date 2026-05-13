@@ -1,15 +1,19 @@
 const experiences = [
   {
-    role: "Software Engineer Intern",
+    role: "Software Engineer",
+    category: "Internship",
     organization: "OCBC",
     period: "May 2026 - Present",
+    location: "Singapore",
     description:
       "FRANKpreneurship 2026 - Group Engineering (Digital Channels)",
   },
   {
-    role: "Software Engineer Intern",
+    role: "Software Engineer",
+    category: "Internship",
     organization: "Radach & Family Organics",
     period: "May 2025 — Aug 2025",
+    location: "Bangkok, Thailand",
     description:
       "SMU ASEAN Internship Program",
   },
@@ -31,6 +35,8 @@ export default function ExperiencePreview() {
             >
               <p className="font-mono text-xs uppercase tracking-widest text-black/40 md:col-span-2">
                 {item.period}
+                <br></br>
+                {item.location}
               </p>
 
               <div className="md:col-span-4">
@@ -38,6 +44,7 @@ export default function ExperiencePreview() {
                   {item.role}
                 </h3>
                 <p className="mt-1 text-black/50">{item.organization}</p>
+                <p className="mt-1 text-black/40">{item.category}</p>
               </div>
 
               <p className="max-w-2xl leading-relaxed text-black/65 md:col-span-6">

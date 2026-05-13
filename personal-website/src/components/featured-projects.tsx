@@ -21,7 +21,7 @@ export default function FeaturedProjects() {
         {featured.map((project, index) => (
           <Link
             key={project.slug}
-            href={`/projects/${project.slug}`}
+            href="/projects"
             className="grid grid-cols-1 gap-5 border-b border-black/10 py-7 transition hover:bg-black/[0.03] md:grid-cols-12"
           >
             <p className="font-mono text-xs text-black/35 md:col-span-1">

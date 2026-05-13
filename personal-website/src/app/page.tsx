@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import AboutPreview from "@/components/about-preview";
 import FeaturedProjects from "@/components/featured-projects";
 import ExperiencePreview from "@/components/experience-preview";
+import EducationPreview from "@/components/education-preview";
 import Footer from "@/components/footer";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <AboutPreview />
       <FeaturedProjects />
       <ExperiencePreview />
+      <EducationPreview />
       <Footer />
     </main>
   );
