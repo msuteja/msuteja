@@ -1,16 +1,18 @@
 export default function About() {
   return (
-    <section className="px-6 py-32 max-w-4xl mx-auto">
-      <div className="space-y-8">
-        <p className="text-zinc-300 leading-relaxed text-lg">
+    <section id="about" className="mx-auto max-w-4xl px-6 py-28">
+      <p className="mb-4 font-mono text-sm text-zinc-500">About</p>
+
+      <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+        <p>
           People often become consumed by what feels important in isolation,
           losing sight of the bigger picture. Many know what to build and how
           to build it, but rarely stop to ask why - the purpose, the vision,
           and the reason something should exist in the first place.
         </p>
 
-        <p className="text-zinc-400 leading-relaxed">
-          I believe diligence and hard work matter, but ideas don't come from
+        <p className="text-zinc-400">
+          I believe diligence and hard work matter, but ideas do not come from
           staring at a screen all day. Go watch a film, listen to music, have a
           nice meal. These things shift perspective, which many truly lack.
           
