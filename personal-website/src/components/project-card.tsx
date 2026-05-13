@@ -3,6 +3,7 @@ type ProjectCardProps = {
   slug: string;
   description: string;
   stack: string[];
+  index?: number;
 };
 
 export default function ProjectCard({
@@ -10,27 +11,38 @@ export default function ProjectCard({
   slug,
   description,
   stack,
+  index = 0,
 }: ProjectCardProps) {
   return (
     <a
       href={`/projects/${slug}`}
-      className="group block rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition hover:border-white/25 hover:bg-white/[0.04]"
+      className="group grid grid-cols-1 border-t border-black/10 py-10 transition hover:bg-black hover:px-5 hover:text-[#f3f0e8] md:grid-cols-12"
     >
-      <h3 className="text-xl font-medium text-white group-hover:text-sky-300">
-        {title}
-      </h3>
+      <div className="mb-4 font-mono text-xs text-black/40 transition group-hover:text-[#f3f0e8]/50 md:col-span-2 md:mb-0">
+        0{index + 1}
+      </div>
 
-      <p className="mt-4 leading-relaxed text-zinc-400">{description}</p>
+      <div className="md:col-span-5">
+        <h3 className="text-3xl font-semibold tracking-[-0.04em] md:text-5xl">
+          {title}
+        </h3>
+      </div>
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        {stack.map((item) => (
-          <span
-            key={item}
-            className="rounded-full border border-white/10 px-3 py-1 font-mono text-xs text-zinc-400"
-          >
-            {item}
-          </span>
-        ))}
+      <div className="mt-5 md:col-span-5 md:mt-0">
+        <p className="max-w-xl leading-relaxed text-black/65 transition group-hover:text-[#f3f0e8]/70">
+          {description}
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {stack.map((item) => (
+            <span
+              key={item}
+              className="font-mono text-xs uppercase tracking-wider text-black/45 transition group-hover:text-[#f3f0e8]/50"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
     </a>
   );

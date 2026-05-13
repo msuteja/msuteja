@@ -19,28 +19,30 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-6xl px-6 py-28">
+    <section id="experience" className="mx-auto max-w-7xl px-5 py-28">
       <SectionHeading
-        label="Experience"
+        label="Log"
         title="Technical work, leadership, and creative direction."
       />
 
-      <div className="space-y-6">
+      <div className="border-t border-black/10">
         {experiences.map((item) => (
           <div
             key={`${item.role}-${item.organization}`}
-            className="rounded-2xl border border-white/10 bg-white/[0.02] p-6"
+            className="grid grid-cols-1 gap-4 border-b border-black/10 py-8 md:grid-cols-12"
           >
-            <div className="flex flex-col justify-between gap-2 md:flex-row">
-              <div>
-                <h3 className="text-xl font-medium text-white">{item.role}</h3>
-                <p className="text-zinc-400">{item.organization}</p>
-              </div>
+            <p className="font-mono text-xs uppercase tracking-widest text-black/40 md:col-span-2">
+              {item.period}
+            </p>
 
-              <p className="font-mono text-sm text-zinc-500">{item.period}</p>
+            <div className="md:col-span-4">
+              <h3 className="text-2xl font-semibold tracking-[-0.03em]">
+                {item.role}
+              </h3>
+              <p className="text-black/50">{item.organization}</p>
             </div>
 
-            <p className="mt-4 max-w-3xl leading-relaxed text-zinc-400">
+            <p className="max-w-2xl leading-relaxed text-black/65 md:col-span-6">
               {item.description}
             </p>
           </div>
