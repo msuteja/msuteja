@@ -23,11 +23,6 @@ export default function AboutPreview() {
             nice meal. These things shift perspective, which many truly lack.
           </p>
 
-          <p className="mt-6 max-w-2xl leading-relaxed text-black/65">
-            I enjoy building systems and solutions to solve problems, but beyond that, 
-            good food, good films, and good music are what I stay alive for.
-          </p>
-
           <Link
             href="/projects"
             className="mt-8 inline-block font-mono text-xs uppercase tracking-widest underline underline-offset-4"

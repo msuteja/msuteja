@@ -11,10 +11,10 @@ export const projects = [
       "An AI-powered VSCode extension that generates and evaluates Spring Boot refactoring exercises",
     stack: ["FastAPI", "CrewAI", "Spring Boot", "TypeScript"],
     summary: "codellamas - An AI-powered VSCode extension to help students learn software refactoring through generated exercises.",
-    details: "Test",
+    details: "",
     links: [
       {
-        label: "Visual Studio Marketplace Link",
+        label: "Visual Studio Marketplace",
         href: "https://marketplace.visualstudio.com/items?itemName=MichaelSuteja.codellamas",
       },
       {
@@ -30,10 +30,10 @@ export const projects = [
     type: "AI",
     thumbnail: "/images/projects/sign-language-recognition.png",
     description:
-      "A computer vision system for sign language recognition using ResNet50 and MediaPipe",
+      "A computer vision system for American Sign Language recognition using ResNet50 and MediaPipe",
     stack: ["TensorFlow", "Keras", "MediaPipe"],
     summary: "An AI-powered computer vision system for recognizing American Sign Language using ResNet50 and MediaPipe.",
-    details: "Test",
+    details: "",
     links: [
       {
         label: "GitHub Repository",
